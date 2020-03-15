@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="jquery.js"></script>
+    <script src="bootstrap.js"></script>
+    <title>Form Jurusan Baru</title>
+</head>
+
+<body class="bg-light">
+    <div class="jumbotron jumbotron-fluid bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-8 mx-auto">
+					<div class="card shadow-sm">
+						<form id="myForm" autocomplete="off" action="save-data-jurusan" method="POST">
+						<h5 class="card-header bg-primary text-white">Form Jurusan Baru</h5>
+						<div class="card-body">
+							<div class="form-group">
+								<label class="font-weight-bold" for="jurusan">Jurusan</label>
+								<input type="text" class="form-control" id="jurusan" name="jurusan" placeholder="Masukkan jurusan" required>
+							</div>
+							<div class="form-group">
+								<label class="font-weight-bold" for="jurusan">Kode Jurusan</label>
+								<input type="text" class="form-control" id="kodejur" name="kodejur" placeholder="Masukkan jurusan" required>
+							</div>
+							<div class="form-group">
+								<label class="font-weight-bold" for="hobi">Deskripsi</label>
+								<input type="text" class="form-control" id="desc" name="desc" placeholder="Masukkan deskripsi" required>
+							</div>
+						</div>
+						<div class="card-footer">
+							<button type="submit" class="btn btn-primary" id="buttonSubmit">Submit</button>
+						</div>
+						</form>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
